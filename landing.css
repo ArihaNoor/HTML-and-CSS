@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.ul-navlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ul-navlinks li {
+    list-style-type: none;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-section {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+.services{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card{
+    border: 2px solid white;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .ul-navlinks {
+        display: none;
+    }
+    .main-section {
+        /* grid-template-columns: 1fr; */
+        flex-direction: column;
+        padding: 20px;
+    }
+    .services{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .ul-navlinks {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .ul-navlinks {
+        display: flex;
+    }
+}
+
+
+/* max-width and min-width */
+/* max-width: agar width less than range ho gi to wo apply ho gii  */
+/* min-width: agar width more than range ho gi to wo apply ho gii  */

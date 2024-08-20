@@ -1,0 +1,27 @@
+.container{
+    background-color: lightblue;
+    display: grid;
+    border: 2px solid red;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3,100px);
+    gap: 20px;
+}
+
+/* .box{
+    background-color: lightpink;
+    font-size: 30px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.item5{
+    grid-row-start: 2;
+    background-color: aqua;
+} */
+
+
+.box{
+    border: 2px solid red;
+    background-color: lightcoral;
+    width: max-content;
+}
